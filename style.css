@@ -1,3 +1,20 @@
-.navbar-custom{
-    background-color: green;
+.femmepoids {
+    height: calc(100vh - var(--bs-navbar-height)); /* Ajuste la hauteur en fonction de la navbar */
+    background-image: url(../TP3_WEB/images/gym-3516208_1280.jpg); /* Remplacez par le lien de votre image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans la div */
+    background-size: cover; /* Assure que l'image couvre toute la div */
 }
+
+.content {
+    z-index: 1; /* Place le contenu au-dessus du background */
+    text-align: center; /* Centre le texte */
+    color: white; /* Contraste pour la lisibilité */
+    padding: 20px; /* Espace autour du texte */
+}
+
+
+#logo{
+    height: 90px;
+    width: 90px;
+}   
