@@ -1,9 +1,12 @@
+body{
+    font-size: 80px;
+}
 .femmepoids {
-    height: calc(100vh - var(--bs-navbar-height)); /* Ajuste la hauteur en fonction de la navbar */
+    display: flex;
     background-image: url(../TP3_WEB/images/gym-3516208_1280.jpg); /* Remplacez par le lien de votre image */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position: center; /* Centre l'image dans la div */
-    background-size: cover; /* Assure que l'image couvre toute la div */
+    height: 800px;
+    color: white;
+    width: 100px;
 }
 
 .content {
@@ -12,9 +15,78 @@
     color: white; /* Contraste pour la lisibilité */
     padding: 20px; /* Espace autour du texte */
 }
+.container-fluid{
+    width: 1024px
+    display: flex;
+    flex-direction: column;
+}
 
-
+.para{
+    background-color: orangered;
+    padding: 4PX 50px;
+    
+   
+}
 #logo{
     height: 90px;
     width: 90px;
 }   
+.texte .para{
+    display: flex;
+flex-direction: column;
+}
+.objectif{
+    background-image: url(images/femme-temoignage.jpg);
+    height: 600PX;
+}
+
+
+footer li i{
+    color: black;
+}
+footer li {
+    list-style: none;
+}
+.text-center{
+    padding-bottom: 15px;
+    color: white;
+}
+.photos img{
+    display: block;
+    height: auto;
+    width: 500px;
+    padding: 15px;
+}
+#image3{
+    height: 660px;
+}
+#image2{
+    height: 660px;
+    color: white;
+}
+.border{
+background-color: orangered;
+}
+.mail {
+    text-align: center;
+    color: white;
+    background-color: orangered;
+    
+}
+footer{
+    display: flex;
+   
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+ 
+}
+.mail{
+    width: 150px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 865px;
+}
