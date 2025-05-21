@@ -3,36 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programmes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3bd68c4d16.js" crossorigin="anonymous"></script>
+    <title>Programmes</title>
+    <link rel="icon" type="image/x-icon" href="logo gym.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
-    <div class="container-fluid mx-auto">
-        <nav class="navbar navbar-expand-lg navbar-light bg-success mx-auto">
-            <a class="navbar-brand" href="accueil.html">
-              <img src="images/logo gym.png"  class="d-inline-block align-top img-fluid" alt="logo_gym" id="logo">
-            </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="programmes.html">Programmes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="nutrition.html">Nutrition</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="app.html">A propos</a>
-                    </li>
-                  </ul>
+  <div class="container-fluid mx-auto rampart-one-regular">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success mx-auto">
+        <a class="navbar-brand" href="accueil.html">
+          <img src="images/logo gym.png"  class="d-inline-block align-top img-fluid" alt="logo_gym" id="logo">
+        </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="programmes.html">Programmes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="app.html">A propos</a>
+                </li>
+              </ul>
+            </div>
+      </nav>
+
+        <!-- Barre latérale et contenu -->
+        <div class="row">
+            <!-- Menu de navigation -->
+            <div class="col-4 bg-success">
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action bg-warning" href="#cardio">Cardio</a>
+                    <a class="list-group-item list-group-item-action bg-warning " href="#musculation">Musculation</a>
+                    <a class="list-group-item list-group-item-action bg-warning" href="#yoga">Yoga</a>
                 </div>
-          </nav>
+            </div>
+
+            <!-- Contenu -->
+            <div class="col-8">
+              <div class="content-container">
+                <div id="cardio" class="section-container">
+                    <h4>Cardio</h4>
+                    <p>Les exercices cardiovasculaires, ou cardio, sont des activités physiques qui augmentent le rythme cardiaque et améliorent la circulation sanguine. Ils sont essentiels pour maintenir une bonne santé physique et mentale. Voici un aperçu des bienfaits du cardio, ainsi qu'un exemple de programme pour vous aider à intégrer ces exercices dans votre routine.
+                      Bienfaits du cardio
+                      Amélioration de la santé cardiaque :
+                      Réduction du stress et de l'anxiété :.
+                      Contrôle du poids :
+                      Augmentation de l'endurance :.
+                      Réduction du risque de maladies chroniques :
+                      Amélioration du sommeil :
+                      </p>
+                </div>
+                <div id="musculation" class="section-container">
+                    <h4>Musculation</h4>
+                    <p>Les bienfaits de la musculation en salle de gym sont nombreux, non seulement pour la forme physique, mais aussi pour la santé générale. Voici un aperçu des principaux bienfaits de la musculation :
+                      1. Augmentation de la force musculaire
+                      2. Amélioration de la composition corporelle
+                      3. Amélioration de la densité osseuse
+                      4. Amélioration de la posture et de la stabilité
+                      5. Optimisation de la santé cardiovasculaire
+                      6. Réduction du risque de blessures
+                      7. Amélioration de la mobilité et de la flexibilité
+                      8. Amélioration de la santé mentale et de l'humeur
+                      9. Augmentation de l'énergie et de la vitalité
+                      10. Augmentation de la longévité
+                      La musculation ne se limite pas à l'amélioration de l'apparence physique, elle a des effets globaux sur la santé. Elle permet de renforcer le corps, de prévenir les blessures, de favoriser la santé mentale et de contribuer à une meilleure qualité de vie. Que ce soit pour augmenter votre force, améliorer votre composition corporelle, ou simplement prendre soin de votre bien-être, la musculation est une discipline essentielle à intégrer dans votre routine de fitness.</p>
+                </div>
+                <div id="yoga" class="section-container">
+                    <h4>Yoga</h4>
+                    <p>Le yoga offre de nombreux bienfaits physiques et mentaux. Il améliore la flexibilité en étirant et en renforçant les muscles, ce qui contribue à une meilleure posture et réduit les tensions corporelles. La pratique régulière renforce également la force musculaire, en particulier du tronc et des muscles stabilisateurs. En plus des bienfaits physiques, le yoga réduit le stress et l'anxiété grâce à des techniques de respiration contrôlée et de méditation. Il aide à améliorer la concentration, la clarté mentale et la résilience émotionnelle. La pratique permet aussi de mieux gérer les douleurs chroniques et améliore la circulation sanguine, ce qui favorise une meilleure santé cardiaque et un système immunitaire renforcé. Enfin, le yoga contribue à un meilleur sommeil et procure une sensation de détente générale, ce qui favorise un bien-être durable.</p>
+                </div>
+            </div>
+      </div>
     </div>
+        <section class="container-fluid container-fluid-custom   bg-success">
+          <footer>
+            <div>
+              <ul >
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              </ul>
+            </div>
+            <h3 class=" mail"><a href=""></a> Mail-to </h3>
+          </footer>
+        </section>
+    </div>
+
 </body>
 </html>

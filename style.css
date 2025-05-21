@@ -6,7 +6,15 @@ body{
     background-image: url(../TP3_WEB/images/gym-3516208_1280.jpg); /* Remplacez par le lien de votre image */
     height: 800px;
     color: white;
-    width: 100px;
+    width: 100%;
+    background-size: cover;
+    flex-direction: column;
+}
+a:hover{
+    
+    transition: color 0.3s ease-in-out;
+   background-color: orangered;
+   font-size: 18px;
 }
 
 .content {
@@ -15,10 +23,10 @@ body{
     color: white; /* Contraste pour la lisibilité */
     padding: 20px; /* Espace autour du texte */
 }
-.container-fluid{
-    width: 1024px
-    display: flex;
-    flex-direction: column;
+.container-fluid {
+    width: 100%
+    
+   
 }
 
 .para{
@@ -35,10 +43,7 @@ body{
     display: flex;
 flex-direction: column;
 }
-.objectif{
-    background-image: url(images/femme-temoignage.jpg);
-    height: 600PX;
-}
+
 
 
 footer li i{
@@ -58,30 +63,47 @@ footer li {
     padding: 15px;
 }
 #image3{
-    height: 660px;
+    height: 660px;  
+}
+#image3:hover{
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+#image2:hover{
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+#image1:hover{
+    transform: scale(1.05);
+    filter: brightness(1.2);
 }
 #image2{
     height: 660px;
     color: white;
+    transition: transform 0.3s ease-in-out , filter 0.3s ease-in-out;
+   box-shadow: 0 4px 6px black(0, 0, 0,0.1);
 }
 .border{
 background-color: orangered;
 }
-.mail {
+footer>.mail {
     text-align: center;
     color: white;
     background-color: orangered;
+    margin-bottom: 5px;
     
 }
 footer{
     display: flex;
-   
+    width: 100%;
+    
 }
 footer ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    
  
 }
 .mail{
@@ -89,4 +111,198 @@ footer ul{
     text-align: center;
     border-radius: 3px;
     margin-left: 865px;
+
+    
 }
+.carousel-item{
+    width: 100%;
+}
+.dropdown{
+    text-align: center;
+    background-color: orangered;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.dropdown .femmepoids{
+display: block;
+}
+.gym{
+    background-image: url(images/enseigne.png);
+    width: 100%;
+    background-size: cover;
+    height: 800px;
+    gap: 100px;
+}
+.action{
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: transparent; /* Ajustez si vous voulez une couleur */
+    padding: 10px;
+    z-index: 1000;
+}
+.action button{
+    background-color:orangered;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.action{
+    gap: 50px;
+}
+.action button:hover {
+    background-color: darkorange;
+}
+.gym .action button {
+    margin-bottom: 90px;
+}
+.gym .film h3 {
+   padding-top: 50px;
+}
+
+.rampart-one-regular {
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pour la page nutrition */
+
+
+.card-container{
+    background-color: orangered;
+        flex-direction: column;
+        display: flex;
+}
+
+
+
+
+.iframe-container{
+    width: 100%; /* 100% de la largeur du parent */
+  text-align: center;
+    margin: 0 auto; /* Centrer l'iframe */
+    height: 185px; /* Taille fixe de l'iframe */
+}
+.iframe-wrapper{
+    background-color: orangered; /* Couleur de fond orange */
+    padding: 20px; /* Espacement autour de l'iframe */
+    margin-top: 20px; /* Espacement supérieur pour séparer des autres éléments */
+}
+.section-wrapper{
+    background-color: orangered; 
+    padding: 20px; 
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Pour programme */
+
+body{
+    background-color: rgb(40, 167, 69)
+  }
+  .list-group {
+            position: sticky;
+            top: 0;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .list-group-item {
+  
+            color: white;
+            border: none;
+        }
+
+        .list-group a:hover {
+            background-color: blue;
+        }
+
+        .section-container {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .section-container img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .section-container h4 {
+            color: rgb(40, 167, 69);
+        }
+
+        .section-container p {
+            font-size: 3rem;
+            color: white;
+        }
+       
+
+
+        .content-container {
+          background-image: url('images/cardio.jpg'); 
+          background-size: cover; 
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 20px; 
+          border-radius: 10px; 
+
+          
+      }
+
+
+
+
+    p:hover {
+     
+        background-color: orangered;
+        opacity: 80%;
+        cursor: pointer;
+    }
