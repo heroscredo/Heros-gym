@@ -3,7 +3,7 @@ body{
 }
 .femmepoids {
     display: flex;
-    background-image: url(../TP3_WEB/images/gym-3516208_1280.jpg); /* Remplacez par le lien de votre image */
+    background-image: url(./images/femmesoulevantpoids.jpg); /* Remplacez par le lien de votre image */
     height: 800px;
     color: white;
     width: 100%;
