@@ -1,20 +1,56 @@
 body{
     font-size: 80px;
+ background-color: #F9FAFB;
+  color: #111827;
 }
+.bg-section{
+    background-color:#F9FAFB;
+    color: #111827;
+ }
+
 .femmepoids {
     display: flex;
     background-image: url(./images/femmesoulevantpoids.jpg); /* Remplacez par le lien de votre image */
     height: 800px;
-    color: white;
+    color: #F9FAFB;
     width: 100%;
     background-size: cover;
     flex-direction: column;
 }
+
+/*pour assombrir le background*/
+
+.section-darken-bg {
+  position: relative;
+  background-image: url(./images/femmesoulevantpoids.jpg); /* remplace par ton image */
+  background-size: cover;
+  background-position: center;
+  color: white; /* ou autre selon ton thème */
+  z-index: 0;
+}
+
+.section-darken-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* ajuste l’intensité ici */
+  z-index: 1;
+}
+
+.section-darken-bg > * {
+  position: relative;
+  z-index: 2; /* le contenu passe au-dessus de l’overlay */
+}
+
 a:hover{
     
     transition: color 0.3s ease-in-out;
-   background-color: orangered;
-   font-size: 18px;
+    background-color: #3B82F6;
+    border-radius: 10%;
+    text-align: center;
 }
 
 .content {
@@ -29,21 +65,27 @@ a:hover{
    
 }
 
-.para{
-    background-color: orangered;
-    padding: 4PX 50px;
-    
-   
-}
 #logo{
     height: 90px;
     width: 90px;
 }   
-.texte .para{
-    display: flex;
-flex-direction: column;
+
+/*Modiication du texte de la page d'acceuil avec media queries pour la responsivité*/
+.texte{
+font-size : 65px;
 }
 
+@media (min-width: 100px) {
+  .texte {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .texte {
+    font-size: 36px;
+  }
+}
 
 
 footer li i{
@@ -54,7 +96,7 @@ footer li {
 }
 .text-center{
     padding-bottom: 15px;
-    color: white;
+    color: #111827;;
 }
 .photos img{
     display: block;
@@ -62,36 +104,23 @@ footer li {
     width: 500px;
     padding: 15px;
 }
-#image3{
-    height: 660px;  
-}
-#image3:hover{
-    transform: scale(1.05);
-    filter: brightness(1.2);
-}
-#image2:hover{
-    transform: scale(1.05);
-    filter: brightness(1.2);
-}
-#image1:hover{
-    transform: scale(1.05);
-    filter: brightness(1.2);
-}
-#image2{
-    height: 660px;
-    color: white;
-    transition: transform 0.3s ease-in-out , filter 0.3s ease-in-out;
-   box-shadow: 0 4px 6px black(0, 0, 0,0.1);
-}
+
 .border{
 background-color: orangered;
 }
+
+/*footer*/
+
+
+.mail{
+    text-align: center;
+}
+
 footer>.mail {
     text-align: center;
-    color: white;
-    background-color: orangered;
+    color: #F9FAFB;
+    background-color: #3B82F6;
     margin-bottom: 5px;
-    
 }
 footer{
     display: flex;
@@ -106,20 +135,13 @@ footer ul{
     
  
 }
-.mail{
-    width: 150px;
-    text-align: center;
-    border-radius: 3px;
-    margin-left: 865px;
 
-    
-}
 .carousel-item{
     width: 100%;
 }
 .dropdown{
     text-align: center;
-    background-color: orangered;
+    background-color: #3B82F6;
     margin-right: 30px;
     border-radius: 10px;
 }
@@ -145,10 +167,10 @@ display: block;
     z-index: 1000;
 }
 .action button{
-    background-color:orangered;
+    background-color:#2563EB;
     border: none;
     padding: 15px 30px;
-    color: white;
+    color: #F9FAFB;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -177,9 +199,24 @@ display: block;
 
 
 
+/*pour les images de la section 2 de la page d'acceuil*/
+.image-card {
+    width : 100%;
+    height: 300px;
+    object-fit: cover ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.image-card:hover {
+    transform: scale(1.03);
+}
 
-
+.image-wrapper {
+  height: 300px;         /* Imposer la hauteur ici */
+  overflow: hidden;
+  border-radius: 10px;
+}
 
 
 
@@ -243,24 +280,20 @@ display: block;
 /* 
 Pour programme */
 
-body{
-    background-color: rgb(40, 167, 69)
-  }
   .list-group {
             position: sticky;
             top: 0;
-            background-color: yellow;
-            padding: 10px;
+            
         }
 
         .list-group-item {
   
-            color: white;
+            color: #F9FAFB;
             border: none;
         }
 
         .list-group a:hover {
-            background-color: blue;
+            background-color: #3B82F6;
         }
 
         .section-container {
@@ -268,41 +301,21 @@ body{
             margin-top: 20px;
         }
 
-        .section-container img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
+        
 
         .section-container h4 {
-            color: rgb(40, 167, 69);
+            color: #3B82F6;
         }
 
         .section-container p {
-            font-size: 3rem;
-            color: white;
+            font-size: 1rem;
+            color: #111827;
         }
        
 
 
-        .content-container {
-          background-image: url('images/cardio.jpg'); 
-          background-size: cover; 
-          background-position: center;
-          background-repeat: no-repeat;
-          padding: 20px; 
-          border-radius: 10px; 
-
-          
-      }
 
 
 
 
-    p:hover {
-     
-        background-color: orangered;
-        opacity: 80%;
-        cursor: pointer;
-    }
+   
